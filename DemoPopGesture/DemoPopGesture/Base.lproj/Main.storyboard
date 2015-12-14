@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JE8-7z-rVs">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--侧滑返回测试Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPC-rW-wlt">
+                                <rect key="frame" x="250" y="273" width="101" height="54"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="5Lh-5T-ojl"/>
+                                    <constraint firstAttribute="width" constant="101" id="uhz-tc-Caa"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="F4R-A2-0d5" kind="push" id="Nct-nX-P8g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HPC-rW-wlt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Rh-ga-e9Y"/>
+                            <constraint firstItem="HPC-rW-wlt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="209" id="wKj-aL-6NY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="侧滑返回测试Demo" id="9vC-lj-B67"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="331"/>
+        </scene>
+        <!--PopVCTwo-->
+        <scene sceneID="uap-IQ-VBA">
+            <objects>
+                <viewController id="DGD-L5-qiM" customClass="PopTwoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yar-bB-voC"/>
+                        <viewControllerLayoutGuide type="bottom" id="7wb-s6-sYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3FC-n1-wIu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PopVCTwo" id="Dpx-Xf-uo5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXe-kW-sDQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="678"/>
+        </scene>
+        <!--PopVCOne-->
+        <scene sceneID="ncZ-7G-H94">
+            <objects>
+                <viewController id="F4R-A2-0d5" customClass="PopOneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zRu-Qt-YkA"/>
+                        <viewControllerLayoutGuide type="bottom" id="DMn-AN-ToQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XBe-NZ-1q8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KRa-e3-75Y">
+                                <rect key="frame" x="250" y="273" width="94" height="54"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="Emm-TC-u98"/>
+                                    <constraint firstAttribute="height" constant="54" id="cAm-Uc-HFP"/>
+                                </constraints>
+                                <state key="normal" title="Push"/>
+                                <connections>
+                                    <segue destination="DGD-L5-qiM" kind="push" id="s46-FT-aDC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="自定义leftBarButtonItem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNY-dg-3Ho">
+                                <rect key="frame" x="207" y="127" width="187" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rNY-dg-3Ho" firstAttribute="top" secondItem="zRu-Qt-YkA" secondAttribute="bottom" constant="63" id="Yoc-hf-6Dy"/>
+                            <constraint firstItem="KRa-e3-75Y" firstAttribute="top" secondItem="zRu-Qt-YkA" secondAttribute="bottom" constant="209" id="fHQ-dw-cWE"/>
+                            <constraint firstItem="rNY-dg-3Ho" firstAttribute="centerX" secondItem="XBe-NZ-1q8" secondAttribute="centerX" id="jwC-5y-YNX"/>
+                            <constraint firstItem="KRa-e3-75Y" firstAttribute="centerX" secondItem="XBe-NZ-1q8" secondAttribute="centerX" constant="-3" id="vdz-ak-SVo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PopVCOne" id="DLM-zP-Uyd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="amq-ur-u6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tvg-gk-okC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JE8-7z-rVs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="se6-Fb-BMG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7K8-uv-q8G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LkV-Qx-skW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="331"/>
+        </scene>
+    </scenes>
+</document>
