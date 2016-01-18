@@ -1,4 +1,4 @@
 # PDQuickTools
 
 ---
-add DemoPopGesture
+- add DemoPopGesture
