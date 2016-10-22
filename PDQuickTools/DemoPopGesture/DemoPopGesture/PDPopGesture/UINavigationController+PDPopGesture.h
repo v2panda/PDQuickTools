@@ -17,7 +17,7 @@
 @property (nonatomic, strong, readonly) UIPanGestureRecognizer *pd_popGestureRecognizer;
 
 /// A view controller is able to control navigation bar's appearance by itself,
-/// rather than a global way, checking "fd_prefersNavigationBarHidden" property.
+/// rather than a global way, checking "pd_prefersNavigationBarHidden" property.
 /// Default to YES, disable it if you don't want so.
 @property (nonatomic, assign) BOOL pd_viewControllerBasedNavigationBarAppearanceEnabled;
 @end
