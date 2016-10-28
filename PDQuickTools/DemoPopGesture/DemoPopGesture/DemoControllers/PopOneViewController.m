@@ -7,6 +7,7 @@
 //
 
 #import "PopOneViewController.h"
+#import "UINavigationController+PDPopGesture.h"
 
 @interface PopOneViewController ()
 
@@ -23,13 +24,19 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
-- (void)viewWillDisappear:(BOOL)animated {
+- (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
-    self.navigationController.navigationBarHidden = NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(CGFLOAT_MIN * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIViewController *vc = [self.navigationController.viewControllers lastObject];
+        if (!vc.pd_prefersNavigationBarHidden) {
+            [self.navigationController setNavigationBarHidden:NO animated:NO];
+        }
+    });
 }
+
 
 - (void)back
 {
