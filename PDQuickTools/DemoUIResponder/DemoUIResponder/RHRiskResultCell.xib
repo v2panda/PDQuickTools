@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="400" id="KGk-i7-Jjw" customClass="RHRiskResultCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="439.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的风险测评结果为" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="23U-iQ-zSu">
+                        <rect key="frame" x="20" y="20" width="280" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="安逸型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5r-bF-Xfo">
+                        <rect key="frame" x="20" y="60" width="280" height="21.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="测评时间：2016-11-03" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afA-oU-Dyr">
+                        <rect key="frame" x="20" y="91.5" width="280" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您适合以下投资：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7g-qe-et3">
+                        <rect key="frame" x="20" y="144.5" width="280" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIi-sL-Tpb">
+                        <rect key="frame" x="20" y="165.5" width="280" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk3-z0-FPE">
+                        <rect key="frame" x="20" y="206.5" width="280" height="40"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.0" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Qsx-yl-MzQ"/>
+                        </constraints>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="重新测评"/>
+                        <connections>
+                            <action selector="continueButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VIu-iJ-wVp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•根据投资人风险承受能力评估结果，将投资人风险承受能力由低到高分为安逸型、保守型、稳健型、积极型、激进型五种类型；" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-rS-ZVV">
+                        <rect key="frame" x="20" y="273" width="280" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•投资人如果一年内没有进行过风险承受能力评估，在下次购买时需要重新评估。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTA-5J-dqw">
+                        <rect key="frame" x="20" y="321" width="280" height="29"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="23U-iQ-zSu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="04d-wz-gTd"/>
+                    <constraint firstItem="Lk3-z0-FPE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="0js-nP-hTF"/>
+                    <constraint firstItem="Lk3-z0-FPE" firstAttribute="top" secondItem="VIi-sL-Tpb" secondAttribute="bottom" constant="25" id="12n-ar-4SF"/>
+                    <constraint firstAttribute="trailing" secondItem="VIi-sL-Tpb" secondAttribute="trailing" constant="20" id="2yN-Ar-ryf"/>
+                    <constraint firstAttribute="trailing" secondItem="23U-iQ-zSu" secondAttribute="trailing" constant="20" id="3mt-9t-1Fa"/>
+                    <constraint firstItem="0qD-rS-ZVV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6Ek-pQ-aUT"/>
+                    <constraint firstAttribute="trailing" secondItem="QTA-5J-dqw" secondAttribute="trailing" constant="20" id="6PQ-yP-mAj"/>
+                    <constraint firstItem="23U-iQ-zSu" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6gF-PR-gZp"/>
+                    <constraint firstItem="h5r-bF-Xfo" firstAttribute="top" secondItem="23U-iQ-zSu" secondAttribute="bottom" constant="22" id="7dg-Ta-Tn6"/>
+                    <constraint firstAttribute="trailing" secondItem="afA-oU-Dyr" secondAttribute="trailing" constant="20" id="Dmu-RI-Pwi"/>
+                    <constraint firstItem="F7g-qe-et3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ET9-bl-Cpt"/>
+                    <constraint firstItem="afA-oU-Dyr" firstAttribute="centerX" secondItem="h5r-bF-Xfo" secondAttribute="centerX" id="F4S-bU-uVG"/>
+                    <constraint firstItem="afA-oU-Dyr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Gou-wp-N3T"/>
+                    <constraint firstAttribute="trailing" secondItem="Lk3-z0-FPE" secondAttribute="trailing" constant="20" id="V9J-YT-ubt"/>
+                    <constraint firstAttribute="trailing" secondItem="F7g-qe-et3" secondAttribute="trailing" constant="20" id="XFm-KE-06Y"/>
+                    <constraint firstItem="QTA-5J-dqw" firstAttribute="top" secondItem="0qD-rS-ZVV" secondAttribute="bottom" constant="5" id="agc-Ij-tiW"/>
+                    <constraint firstItem="h5r-bF-Xfo" firstAttribute="centerX" secondItem="23U-iQ-zSu" secondAttribute="centerX" id="e4t-bv-wel"/>
+                    <constraint firstItem="23U-iQ-zSu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="eLe-79-AIX"/>
+                    <constraint firstItem="h5r-bF-Xfo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gxw-Iz-10h"/>
+                    <constraint firstItem="0qD-rS-ZVV" firstAttribute="top" secondItem="Lk3-z0-FPE" secondAttribute="bottom" constant="26" id="mJ0-Yn-mMF"/>
+                    <constraint firstAttribute="trailing" secondItem="0qD-rS-ZVV" secondAttribute="trailing" constant="20" id="mXA-rg-FjC"/>
+                    <constraint firstItem="VIi-sL-Tpb" firstAttribute="top" secondItem="F7g-qe-et3" secondAttribute="bottom" constant="5" id="npu-gD-5z4"/>
+                    <constraint firstItem="VIi-sL-Tpb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="qhk-OX-uCt"/>
+                    <constraint firstItem="afA-oU-Dyr" firstAttribute="top" secondItem="h5r-bF-Xfo" secondAttribute="bottom" constant="10" id="vB5-CZ-UFH"/>
+                    <constraint firstAttribute="trailing" secondItem="h5r-bF-Xfo" secondAttribute="trailing" constant="20" id="vu5-1t-aIV"/>
+                    <constraint firstItem="F7g-qe-et3" firstAttribute="top" secondItem="afA-oU-Dyr" secondAttribute="bottom" constant="38.5" id="wGb-Nk-gey"/>
+                    <constraint firstItem="QTA-5J-dqw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zvz-dr-JTd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="continueButton" destination="Lk3-z0-FPE" id="A6C-dc-bUZ"/>
+                <outlet property="riskLvlLabel" destination="h5r-bF-Xfo" id="Bte-Mr-doh"/>
+                <outlet property="scopeLabel" destination="VIi-sL-Tpb" id="Faf-Qh-V0v"/>
+                <outlet property="testTimeLabel" destination="afA-oU-Dyr" id="ayS-ck-pQQ"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>
